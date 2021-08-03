@@ -1,2 +1,4 @@
-# Data_Science
-My data science projects
+# Churn Risk Rate Prediction (HackerEarth)
+This notebook is created as part of a HackerEarth competition. The goal is to predict the churn score for a website based on multiple features related to a user’s demographic, browsing behavior, and historical purchase data, among other details.
+
+For this purpose, the data is explored and prepared and several algorithms (Random Forest, Kernel SVM, Neural Network) are optimized using GridSearchCV. This has resulted in a final score of 74.9 (100 * f1-score).
