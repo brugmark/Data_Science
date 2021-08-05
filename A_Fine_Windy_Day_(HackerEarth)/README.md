@@ -19,9 +19,7 @@ The data was also checked for missing data. The bar plot below shows that for se
 
 ![missing_data](https://user-images.githubusercontent.com/70854452/128378686-e614451d-95ed-4194-affb-a9cc64e357a3.png)
 
-Subsequently, we look for potential outliers in the numerical features. These are identified by calculating the z-score. This represents how many standard deviations a value deviates from the mean. The farther away, the more likely the value is an outlier.
-
-In the scatter plots below, a value with a z-score of 3 or more is colored red.
+Subsequently, we look for potential outliers in the numerical features. To exemplify this, the scatter plot below is shown. In this plot a value with a z-score of 3 or more is colored red.
 
 ![potential_outliers](https://user-images.githubusercontent.com/70854452/128378974-e276ecfb-fcf1-43b1-94cf-0408fae542f6.png)
 
