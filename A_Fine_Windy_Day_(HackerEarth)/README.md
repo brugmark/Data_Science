@@ -4,7 +4,6 @@ This notebook is created as part of a [HackerEarth competition](https://www.hack
 For this purpose, the data is explored and prepared and several algorithms (Linear, Random Forest, Gradient Boosting Tree, and Extreme Gradient Boosting) are optimized using GridSearchCV and RFECV. This has resulted in a final score of 96.3% (100 * R-squared).
 
 ## 1. Data Understanding
-
 The distribution of the target feature 'windmill_generated_power(kW/h)' was visualized by plotting a histogram (below). It shows that the distribution is right skewed. In the notebook this skewness will be (partially) removed. As a result, the eventual predictive performance of the machine learning models is improved.
 
 ![distribution_target_value](https://user-images.githubusercontent.com/70854452/128375859-3a2a9f1b-d5ad-41da-8573-e6ea13aa6774.png)
@@ -19,9 +18,29 @@ The data was also checked for missing data. The bar plot below shows that for se
 
 ![missing_data](https://user-images.githubusercontent.com/70854452/128378686-e614451d-95ed-4194-affb-a9cc64e357a3.png)
 
-Subsequently, we look for potential outliers in the numerical features. To exemplify this, the scatter plot below is shown. In this plot a value with a z-score of 3 or more is colored red.
+Subsequently, I look for potential outliers in the numerical features. To exemplify this, the scatter plot below is shown. In this plot a value with a z-score of 3 or more is colored red.
 
 ![potential_outliers](https://user-images.githubusercontent.com/70854452/128378974-e276ecfb-fcf1-43b1-94cf-0408fae542f6.png)
 
 ## 2. Data Preparation
+The following steps are taken to prepare the data:
+- Remove outliers
+- Encoding
+- Feature engineering
+- Fill missing data
+- Reformat & Standardize
 
+## 3. Modeling
+In this section each algorithm is optimized/evaluated using:
+- Hyper parameter optimization 
+- K-fold cross validation (r2 score)
+
+In addition, learning curves are created to determine whether over- or underfitting occurs.
+
+![recursive_feature_elimination](https://user-images.githubusercontent.com/70854452/129580598-a16be62a-2b54-45ec-8730-1dfaa1770819.png)
+
+And recursive feature elimination is applied:
+
+![recursive_feature_elimination](https://user-images.githubusercontent.com/70854452/129580019-4bb0a2dc-12c9-45d6-b423-857a95bd2ef2.png)
+
+In the end, Extreme Gradient Boosting shows the best results and is selected to make the final prediction.
