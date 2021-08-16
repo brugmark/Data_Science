@@ -37,7 +37,7 @@ In this section each algorithm is optimized/evaluated using:
 
 In addition, learning curves are created to determine whether over- or underfitting occurs.
 
-![recursive_feature_elimination](https://user-images.githubusercontent.com/70854452/129580598-a16be62a-2b54-45ec-8730-1dfaa1770819.png)
+![learning_curves](https://user-images.githubusercontent.com/70854452/129582842-144c4cd4-bbe1-4f60-8838-3c979a1b58c2.png)
 
 And recursive feature elimination is applied:
 
