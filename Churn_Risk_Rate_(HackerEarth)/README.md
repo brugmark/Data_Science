@@ -16,7 +16,7 @@ The relation between the categorical + target features is assessed using box and
 
 ![relation_categorical_and_target_variabels](https://user-images.githubusercontent.com/70854452/129757936-371f144d-aa2c-4976-afcd-4f1c0faae23b.png)
 
-Next the data is checked for missing values. The earlier plots to assess the relation between the categorical + target features already revealed some non-'NA' missing values for the following features:
+Next the data is checked for missing values. The plots to assess the relation between the categorical + target features already revealed some non-'NA' missing values for the following features:
 - gender: 'unknown'
 - joined_through_referral: '?'
 - medium_of_operation: '?'
